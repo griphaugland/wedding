@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@font-face {
+  font-family: "Carolyna";
+  src: url("../fonts/Carolyna\ Pro\ Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../fonts/Garamond\ Bold.ttf") format("truetype");
+}
+body {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url("../media/bukett.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overscroll-behavior: none;
+  overflow: scroll;
+}
+.filter {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  top: 0px;
+  position: relative;
+  background-color: rgba(250, 235, 215, 0.707);
+}
+li {
+  display: flex;
+  font-family: "Garamond";
+  font-size: 5rem;
+  color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  width: 5.4rem;
+  height: 1rem;
+  padding: 0.6rem;
+  padding-top: 0.9rem;
+  border-radius: 0.3rem;
+  background-color: antiquewhite;
+  font-size: 0.7rem;
+  margin-right: 3rem;
+  color: black;
+}
+.btn:hover {
+  background-color: white;
+}
+.lang {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9rem;
+  gap: 0.7rem;
+  margin-left: 1rem;
+}
+#lang-checkbox {
+  display: none;
+}
+#lang-checkbox:checked ~ nav {
+  display: block;
+}
+.lang-icon:hover {
+  background-color: white;
+}
+nav {
+  display: none;
+  justify-content: space-around;
+  margin-top: 10px;
+  background-color: antiquewhite;
+}
+nav {
+  position: fixed;
+  width: 3.5rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  font-size: 1rem;
+  list-style: none;
+}
+nav a {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-right: 0px;
+  align-content: center;
+  justify-content: center;
+}
+nav a:hover {
+  background-color: white;
+}
+.lang-icon {
+  padding: 10px;
+  font-size: 2rem;
+  background-color: antiquewhite;
+  color: black;
+}
+.lang-icon:focus {
+  border: 1px rgb(54, 52, 52) solid;
+}
+i {
+  font-size: 1.8rem;
+}
+.flag {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+ul {
+  margin-top: -2rem;
+  display: flex;
+  justify-content: center;
+}
+.map {
+  display: flex;
+  align-content: space-between;
+  margin: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  justify-content: space-around;
+  margin: 3rem;
+  margin-top: 0.1rem;
+  text-align: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1144px) {
+  * {
+    font-size: x-small;
+  }
+  .mtext {
+    font-size: 5.7rem;
+  }
+  .homepage {
+    margin-top: 4rem;
+  }
+  nav {
+    width: 4.25rem;
+    z-index: 999;
+  }
+  .btn {
+    padding-top: 1rem;
+    text-align: center;
+    width: 8rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .locationtext {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 235, 215, 0.707);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .infocard {
+    width: 33rem;
+  }
+  .iframe.responsive.google-maps {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    margin-top: 15rem;
+  }
+  .iframemap {
+    width: 50%;
+    max-height: 300px;
+  }
+  .ranchimage {
+    width: 100%;
+    max-width: 300px;
+  }
+  .infowrapper {
+    background-color: antiquewhite;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+  .time {
+    grid-column: 2 /12;
+    grid-row: 1;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .attire {
+    grid-column: 2 /12;
+    grid-row: 2;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .transportation {
+    grid-column: 2 /12;
+    grid-row: 3;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .food {
+    grid-column: 2 /12;
+    grid-row: 4;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .gifts {
+    grid-column: 2 /12;
+    grid-row: 5;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .information {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 360px) {
+  * {
+    font-size: xx-small;
+  }
+  .mtext {
+    font-size: 5.7rem;
+  }
+  .homepage {
+    margin-top: 4rem;
+  }
+  nav {
+    width: 4.25rem;
+  }
+  .btn {
+    padding-top: 1rem;
+    text-align: center;
+    width: 8rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .locationtext {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 235, 215, 0.707);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .infocard {
+    width: 33rem;
+  }
+  .iframe.responsive.google-maps {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .rsvpiframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0%;
+    z-index: 0;
+  }
+  .infowrapper {
+    background-color: antiquewhite;
+    grid-row: 1 / 10;
+    grid-column: 3/11;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+}
+.infowrapper {
+  background-color: antiquewhite;
+  grid-row: 1 / 10;
+  grid-column: 1/13;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 6rem;
+}
+.infoheader {
+  font-family: "Carolyna";
+  font-size: 5rem;
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  height: 10%;
+  text-align: center;
+  top: 2rem;
+}
+.time {
+  grid-column: 3 /11;
+  grid-row: 1;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.attire {
+  grid-column: 3 /11;
+  grid-row: 2;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.transportation {
+  grid-column: 3 /11;
+  grid-row: 3;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.food {
+  grid-column: 3 /11;
+  grid-row: 4;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.gifts {
+  grid-column: 3 /11;
+  grid-row: 5;
+  font-size: 1rem;
+  padding: 1rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+.ranchimage {
+  width: 49%;
+  max-height: 650px;
+  min-width: none;
+  margin-bottom: 1rem;
+}
+.iframemap {
+  width: 49%;
+  height: 650px;
+  margin-bottom: 1rem;
+}
+.picturewrapper {
+  grid-row: 6 /10;
+  grid-column: 2 / 12;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
