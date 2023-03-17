@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="../gallery.js" type="module" defer></script>
+    <title>Wedding RSVP</title>
+    <script
+      src="https://kit.fontawesome.com/17c7a6edf9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="gallerybody">
+    <div class="background">
+        <header>
+          <input type="checkbox" id="lang-checkbox" />
+          <label class="lang-icon" for="lang-checkbox"
+            ><i class="fa-solid fa-language"></i
+          ></label>
+          <nav class="navrsvp">
+            <a href="../npages/nrsvp.html"
+              ><img class="flag" src="../media/norflag.png"
+            /></a>
+            <a href="../pages/rsvp.html"
+              ><img class="flag" src="../media/usflag.png"
+            /></a>
+          </nav>
+          <ul>
+            <a href="../index.html"><li class="btn">HJEM</li></a>
+            <a href="./info.html"><li class="btn">INFO</li></a>
+            <a href="./rsvp.html"><li class="btn">RSVP</li></a>
+          </ul>
+        </header>
+        <main>
+          <section class="gallerysection">
+            <div class="imageplacement">
+                <p class="credit">Photo: Kaila & Co</p>
+              <img class="image" src="../media/w-18.jpg" alt="" width="100%" height="100%"  />
+            </div>
+            <div class="imageplacement">
+                <p class="credit">Photo: Kaila & Co</p>
+              <img class="image" src="../media/w-25.jpg" alt="" width="100%" height="100%"  />
+            </div>
+            <div class="imageplacement">
+                <p class="credit">Photo: Kaila & Co</p>
+              <img class="image" src="../media/w-9.jpg" alt="" width="100%" height="100%" />
+            </div>
+          </section>
+          <div id="image-viewer">
+            <span class="close"><i id="x" class="fa-solid fa-x"></i></span>
+            <img class="imageClicked" id="full-image" />
+            <p class="credit">Photo: Kaila & Co</p>
+        </main>
+      </div>
+  </body>
+</html>

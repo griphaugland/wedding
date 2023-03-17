@@ -276,6 +276,121 @@ section p {
   left: 0;
   width: 50%;
 }
+.gallerysection {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: flex;
+  width: 80vw;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.img1 {
+  background-image: url(../media/w-9.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img2 {
+  background-image: url(../media/w-18.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img3 {
+  background-image: url(../media/w-25.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imageplacement {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+}
+img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.imageplacement:hover {
+  opacity: 0.7;
+}
+.gallerybody {
+  height: 100%;
+  overflow: scroll;
+}
+#image-viewer {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.814);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.close {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: 40%;
+  margin-right: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+#x:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.imageClicked {
+  display: flex;
+  max-width: 60%;
+  max-height: 90%;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  margin-bottom: 1rem;
+}
+.show {
+  display: flex;
+}
+#x {
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+.gallerybody {
+  background-image: none;
+  background-color: rgb(33, 33, 32);
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.credit {
+  position: absolute;
+  bottom: -6px;
+  right: 2px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.587);
+  font-size: 0.7rem;
+  padding: 0.3rem;
+}
 @media only screen and (max-width: 1144px) {
   * {
     font-size: x-small;
@@ -320,7 +435,7 @@ section p {
     justify-content: center;
     width: inherit;
     gap: 6rem;
-    margin-right: 8rem;
+    margin-right: 4rem;
   }
   ul a {
     width: 5.4rem;
